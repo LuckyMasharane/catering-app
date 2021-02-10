@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goRequestPage() {
+    this.router.navigate(["/request"]);
+  }
+  goContactPage() {
+    this.router.navigate(["/contact"]);
+  }
+  goAboutPage() {
+    this.router.navigate(["/about"]);
+  }
+  goGalleryPage() {
+    this.router.navigate(["/gallery"]);
   }
 
 }
