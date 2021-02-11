@@ -8,19 +8,14 @@
 </ion-header>
 
 <ion-content>
-
-  <ion-item>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Contact Details</ion-card-title>
-      </ion-card-header>
-    
-      <ion-card-content>
+  <div class="container">
+    <ion-item>
+      <ion-text>
         <ion-item>
           <ion-label>
             <ion-icon name="call-outline"></ion-icon>
-             011 564 6952 
-            </ion-label>
+            011 564 6952
+          </ion-label>
         </ion-item>
         <ion-item>
           <ion-label>
@@ -35,27 +30,25 @@
             1685
           </address>
         </ion-item>
-      </ion-card-content>
-    </ion-card>
-  </ion-item>
-
-  <ion-item-group>
-    <ion-label>Enquiries</ion-label>
-    <ion-item>
-      <ion-label position="floating">Name and Surname</ion-label>
-      <ion-input></ion-input>
+      </ion-text>
     </ion-item>
-    <ion-item>
-      <ion-label position="floating">Email</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Description</ion-label>
-      <ion-textarea></ion-textarea>
-    </ion-item>
-    <ion-item>
-      <ion-button color="warning">Submit</ion-button>
-    </ion-item>
-  </ion-item-group>
-
+  
+    <ion-item-group style="margin-top: 50px;">
+      <ion-label>Enquiries</ion-label>
+      <ion-item>
+        <ion-label position="floating">Name and Surname</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+      <ion-button color="warning" expand="block">Submit</ion-button>
+    </ion-item-group>
+  
+  </div>
 </ion-content>

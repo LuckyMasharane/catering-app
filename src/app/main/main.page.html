@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="warning">
     <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,24 +7,24 @@
 <ion-content>
 
   <ion-card>
-    <ion-card-header>
+    
       <img src="../../assets/img/main.jpg">
-    </ion-card-header>
+    
   </ion-card>
 
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button (click)= "goGalleryPage()" color="success">Gallery</ion-button>
+        <ion-button (click)= "goGalleryPage()" expand="block" color="warning">Gallery</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="goRequestPage()" color="success">Request</ion-button>
+        <ion-button (click)="goRequestPage()"  expand="block" color="warning">Request</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="goAboutPage()" color="success">About </ion-button>
+        <ion-button (click)="goAboutPage()" expand="block" color="warning">About </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)= "goContactPage()" color="success">Contact</ion-button>
+        <ion-button (click)= "goContactPage()"  expand="block" color="warning">Contact</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

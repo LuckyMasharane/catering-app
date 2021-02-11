@@ -10,8 +10,7 @@
 <ion-content padding class="form-content">
 <div class="container">
   <ion-item>
-    <img
-      src="../../assets/img/logo.jpg" class="card-img-top" alt="...">
+    <img src="../../assets/img/user.png" class="card-img-top" alt="...">
   </ion-item>
   <form class="form" [formGroup]="validations_form" >
     <ion-item>
@@ -61,7 +60,7 @@
       </ng-container>
     </div>
 
-    <ion-button class="submit-btn" color="danger"  (click)="tryRegister()"expand="block" type="submit" [disabled]="!validations_form.valid">Register
+    <ion-button class="submit-btn" color="dark"  (click)="tryRegister()"expand="block" type="submit" [disabled]="!validations_form.valid">Register
     </ion-button>
     <label class="error-message">{{errorMessage}}</label>
     <label class="success-message">{{successMessage}}</label>
